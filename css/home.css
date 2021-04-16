@@ -1,0 +1,142 @@
+body{
+    background-color: rgba(14,1,29,0.8)!important;
+    /* background-image: url(../img/purpleBack.png) !important;  */ 
+}
+
+/* Customização da primeira linha da header */
+.navbar.custom {
+    height: 150px;  
+    margin: 0 auto;
+    background-image: url(../img/purple.jpg);
+    border-radius: 15px;
+    width: 100%;
+}
+a.navbar-brand{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+.navbar.custom > navbar-brand{
+    margin: auto;
+}
+.titulo{
+    color: #f0f0f0 !important;
+    font-family: 'Permanent Marker', cursive;
+}
+.imagemLogo{
+    width: 50px;
+    margin-top: 20px;
+}
+
+
+/* Input de pesquisa */
+.formularioHeader{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.input-group{
+    width: 400px;
+}
+.btn.btn-default{
+    border-radius: 25px;
+    height: 34px;
+}
+input.form-control{
+    border-radius: 25px;
+    width: 200px;
+}
+
+
+/* Lado direito da header */
+.nav.navbar-nav.navbar-right{
+    margin-right: 50px;
+}
+.imgCart{
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+}
+.iconLogin{
+    color: #f0f0f0 !important;
+}
+
+.bi.bi-person{
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    margin-bottom: -3px;
+}
+.login{
+    font-size: 15px;
+    color: #f0f0f0 !important;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+/* Segunda linha da header (dos icones) */
+a.icon-show{
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 1px 1px 5px #ccc;
+    border-radius: 20px;
+    color: #f0f0f0 !important;
+}
+.iconNav{
+    width: 25px;
+    margin-left: 25px;
+    text-align: center; 
+}
+
+/* Customização do carrossel */
+.carousel-inner{
+    border-radius: 25px; 
+    margin: auto;
+}
+
+/* Customização da lista de produtos */
+.img-responsive{
+    width: 30px;
+    border-radius: 15px;
+}
+
+
+/* Customização do Footer */
+.footer{
+    background-image: url(../img/purple.jpg) !important;
+    color: #f0f0f0;
+    height: 350px;
+}
+.row.header{
+    margin-top: 15px;
+    padding: 20px;
+    color:whitesmoke;
+}
+.table.borderless{
+    margin-top: 10px;
+    text-align: center;   
+}
+.table.borderless h4{
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+.table.borderless td, .table.borderless tr {
+    border: none;
+    padding: 20px;
+}
+.footer_options{
+    color: #f0f0f0 !important;
+    font-size: 15px;
+    text-shadow: 0px 0px 8px #000000; 
+}
+.input-group.email{
+    margin-top: -40px;
+    margin-right: 100px;
+    margin-left: -50px;
+    width: 270px;
+}
+
+
+
+
+
+
+
