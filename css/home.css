@@ -1,142 +1,248 @@
-body{
-    background-color: rgba(14,1,29,0.8)!important;
-    /* background-image: url(../img/purpleBack.png) !important;  */ 
+body {
+    background-color: rgba(14, 1, 29, 0.8)!important;
+    /* background-image: url(../img/purpleBack.png) !important;  */
 }
 
+
 /* Customização da primeira linha da header */
+
 .navbar.custom {
-    height: 150px;  
+    height: 150px;
     margin: 0 auto;
     background-image: url(../img/purple.jpg);
     border-radius: 15px;
     width: 100%;
 }
-a.navbar-brand{
+
+a.navbar-brand {
     font-size: 40px;
     text-align: center;
     margin-top: 20px;
 }
-.navbar.custom > navbar-brand{
+
+.navbar.custom>navbar-brand {
     margin: auto;
 }
-.titulo{
+
+.titulo {
     color: #f0f0f0 !important;
     font-family: 'Permanent Marker', cursive;
 }
-.imagemLogo{
+
+.imagemLogo {
     width: 50px;
     margin-top: 20px;
 }
 
 
 /* Input de pesquisa */
-.formularioHeader{
+
+.formularioHeader {
     margin-top: 20px;
     margin-left: 30px;
 }
-.input-group{
+
+.input-group {
     width: 400px;
 }
-.btn.btn-default{
+
+.btn.btn-default {
     border-radius: 25px;
     height: 34px;
 }
-input.form-control{
+
+input.form-control {
     border-radius: 25px;
     width: 200px;
 }
 
 
 /* Lado direito da header */
-.nav.navbar-nav.navbar-right{
+
+.nav.navbar-nav.navbar-right {
     margin-right: 50px;
 }
-.imgCart{
+
+.imgCart {
     margin-top: 10px;
     width: 35px;
     height: 35px;
 }
-.iconLogin{
+
+.iconLogin {
     color: #f0f0f0 !important;
 }
 
-.bi.bi-person{
+.bi.bi-person {
     width: 22px;
     height: 22px;
     margin-right: 5px;
     margin-bottom: -3px;
 }
-.login{
+
+.login {
     font-size: 15px;
     color: #f0f0f0 !important;
     margin-top: 20px;
     padding: 0px 20px;
 }
 
+
 /* Segunda linha da header (dos icones) */
-a.icon-show{
+
+a.icon-show {
     margin-left: 10px;
     margin-right: 10px;
     box-shadow: 1px 1px 5px #ccc;
     border-radius: 20px;
     color: #f0f0f0 !important;
 }
-.iconNav{
+
+.iconNav {
     width: 25px;
     margin-left: 25px;
-    text-align: center; 
+    text-align: center;
 }
 
+
 /* Customização do carrossel */
-.carousel-inner{
-    border-radius: 25px; 
+
+.carousel-inner {
+    border-radius: 25px;
     margin: auto;
 }
 
+
 /* Customização da lista de produtos */
-.img-responsive{
-    width: 30px;
-    border-radius: 15px;
+
+h3 {
+    color: #f0f0f0 !important;
+    text-align: center !important;
+    margin-bottom: 4% !important;
+    font-family: 'Permanent Marker', cursive !important;
+    font-size: 30px !important;
+}
+
+h3::before {
+    content: "-----";
+    text-indent: -15000px;
+    border-top: 5px solid #89d2c4;
+    display: inline-block;
+    line-height: 0;
+    width: 5%;
+    margin: 10px;
+    vertical-align: sub;
+}
+
+h3::after {
+    content: "-----";
+    text-indent: -15000px;
+    border-top: 5px solid #89d2c4;
+    display: inline-block;
+    line-height: 0;
+    width: 5%;
+    margin: 10px;
+    vertical-align: sub;
+}
+
+h3:hover {
+    text-decoration: none;
+}
+
+.carousel {
+    margin-bottom: 0;
+}
+
+.thumbnail {
+    background-color: #1c1722 !important;
+    border: none !important;
+}
+
+.thumbnail>img {
+    background-color: #1c1722 !important;
+}
+
+.carousel-control-prod {
+    left: -12px;
+    height: 40px;
+    width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 90px;
+}
+
+.carousel-control-prod.right {
+    right: -12px;
+}
+
+.carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: -10px;
+    margin-right: -19px;
+}
+
+.carousel-indicators li {
+    background: #cecece;
+}
+
+.carousel-indicators .active {
+    background: #428bca;
+}
+
+.listaProdutos {
+    background-color: rgba(1, 0, 2, 0.548);
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carrosselProd {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
 }
 
 
 /* Customização do Footer */
-.footer{
+
+.footer {
     background-image: url(../img/purple.jpg) !important;
     color: #f0f0f0;
     height: 350px;
 }
-.row.header{
+
+.row.header {
     margin-top: 15px;
     padding: 20px;
-    color:whitesmoke;
+    color: whitesmoke;
 }
-.table.borderless{
+
+.table.borderless {
     margin-top: 10px;
-    text-align: center;   
+    text-align: center;
 }
-.table.borderless h4{
+
+.table.borderless h4 {
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
-.table.borderless td, .table.borderless tr {
+
+.table.borderless td,
+.table.borderless tr {
     border: none;
     padding: 20px;
 }
-.footer_options{
+
+.footer_options {
     color: #f0f0f0 !important;
     font-size: 15px;
-    text-shadow: 0px 0px 8px #000000; 
+    text-shadow: 0px 0px 8px #000000;
 }
-.input-group.email{
+
+.input-group.email {
     margin-top: -40px;
     margin-right: 100px;
     margin-left: -50px;
     width: 270px;
 }
-
-
-
-
-
-
-
