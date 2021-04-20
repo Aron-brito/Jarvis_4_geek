@@ -1,0 +1,169 @@
+body {
+    background-color: rgba(0, 0, 0, 0.6)!important;
+    color: black !important;
+    /* background-image: url(../img/purpleBack.png) !important;  */
+}
+
+
+/* Customização da primeira linha da header */
+
+.navbar.custom {
+    height: 100px;
+    margin: 0 auto;
+    background-image: url(../img/purple.jpg);
+    width: 100%;
+    border: none;
+}
+
+a.navbar-brand {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar.custom>navbar-brand {
+    margin: auto;
+}
+
+ul.nav.navbar-nav.navbar-form {
+    margin-top: 20px !important;
+}
+
+.titulo {
+    color: #f0f0f0 !important;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.imagemLogo {
+    width: 50px;
+    margin-top: 20px;
+}
+
+.tituloLogo {
+    display: block;
+    position: relative;
+    margin-right: 25px;
+}
+
+.linhaHeader {
+    margin-top: 15px !important;
+}
+
+
+/* Segunda linha da header (dos icones) */
+
+a.icon-show {
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 1px 1px 5px #ccc;
+    border-radius: 20px;
+    color: #f0f0f0 !important;
+}
+
+.iconNav {
+    width: 25px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+#botaoGerente {
+    background-color: #f0f0f0 !important;
+    color: #1c1722 !important;
+}
+
+
+/* Customização Tabela */
+
+.tituloTabela {
+    font-size: 20px;
+}
+
+.customTabela {
+    border: 1px solid black !important;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+td {
+    font-size: 17px;
+}
+
+a.btn {
+    font-size: 16px;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: black !important;
+    font-size: 16px;
+}
+
+
+/* BOTÃO DE CHECK*/
+
+.TriSea-technologies-Switch>input[type="checkbox"] {
+    display: none;
+}
+
+.TriSea-technologies-Switch>label {
+    cursor: pointer;
+    height: 0px;
+    position: relative;
+    width: 40px;
+}
+
+.TriSea-technologies-Switch>label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position: absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+
+.TriSea-technologies-Switch>label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+
+.TriSea-technologies-Switch>input[type="checkbox"]:checked+label::before {
+    background: inherit;
+    opacity: 0.5;
+    background-color: #140d29;
+}
+
+.TriSea-technologies-Switch>input[type="checkbox"]:checked+label::after {
+    background: inherit;
+    left: 20px;
+    background-color: #140d29;
+}
+
+.TriSea-technologies-Switch {
+    margin-right: 80%;
+}
+
+
+/* Customização do Footer */
+
+footer {
+    background-image: url(../img/purple.jpg) !important;
+    font-weight: bold;
+    color: #f0f0f0;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

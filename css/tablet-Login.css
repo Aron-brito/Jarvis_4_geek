@@ -1,0 +1,144 @@
+body {
+    background-image: url(../img/purple.jpg) !important;
+}
+
+h3 {
+    color: black !important;
+}
+
+.account-box {
+    border: 2px solid rgba(153, 153, 153, 0.75);
+    border-radius: 15px;
+    -moz-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -o-border-radius: 2px;
+    z-index: 3;
+    font-size: 13px !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    height: 550px;
+    box-shadow: 1px 1px 5px #ccc;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixaLogin {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.tituloLogo {
+    margin-bottom: 40px;
+}
+
+.imagemLogo {
+    margin-top: 0 !important;
+}
+
+.navbar-brand.titulo {
+    color: rgb(13 10 27) !important;
+    font-size: 40px;
+    margin-left: 20px !important;
+    margin-right: 5px;
+}
+
+.botaoLogin {
+    background-color: rgb(13 10 27);
+    color: #f0f0f0;
+}
+
+.logo {
+    width: 10px;
+    text-align: center;
+    margin: 10px 0px 27px 40px;
+    background-position: 0px -4px;
+    position: relative;
+}
+
+input.form-control {
+    width: 80% !important;
+    margin: auto;
+}
+
+.checkbox {
+    margin-left: 20px;
+    margin-bottom: 20px !important;
+    display: inline-block !important;
+}
+
+.forgotLnk {
+    margin-top: 10px;
+    display: block;
+}
+
+.or-box {
+    position: relative;
+    border-top: 1px solid #dfdfdf;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.or {
+    color: #666666;
+    background-color: #ffffff;
+    position: absolute;
+    text-align: center;
+    top: -8px;
+    width: 40px;
+    left: 190px;
+}
+
+.account-box .btn:hover {
+    color: #fff;
+}
+
+.btn-facebook {
+    background-color: #5477af;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.confirm {
+    margin-top: 20px;
+    background-color: #3e3e98;
+    border-radius: 5px;
+}
+
+.btn.btn-primary.btn-block {
+    background-color: #3e3e98 !important;
+    border: none;
+    font-size: 15px;
+}
+
+.btn-google {
+    background-color: #f0f0f09d;
+    box-shadow: 1px 1px 5px #ccc;
+    color: #fff;
+    font-weight: bold;
+}
+
+.google {
+    width: 20px;
+}
+
+.facebook {
+    width: 20px;
+}
+
+
+/* Customização do Footer */
+
+footer {
+    background-image: url(../img/purple.jpg) !important;
+    font-weight: bold;
+    color: #f0f0f0;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
