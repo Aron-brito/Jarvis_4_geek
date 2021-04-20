@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(14, 1, 29, 0.8)!important;
+    background-color: rgba(0, 0, 0, 0.9)!important;
     /* background-image: url(../img/purpleBack.png) !important;  */
 }
 
@@ -12,6 +12,7 @@ body {
     background-image: url(../img/purple.jpg);
     border-radius: 15px;
     width: 100%;
+    border: none;
 }
 
 a.navbar-brand {
