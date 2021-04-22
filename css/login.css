@@ -35,8 +35,9 @@ h3{
 
 input.form-control{
     width: 300px;
-    margin: auto;
+    margin: auto;    
 }
+
 
 .checkbox{
     margin-left: 20px;
@@ -92,3 +93,45 @@ input.form-control{
     color: #fff;
     font-weight:bold;
 }
+
+.registro{
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+.pass_with_toggle{
+    margin-bottom: 20px !important;
+}
+
+#togglePassword{
+    margin-left: -140px;
+}
+#email_login{
+    margin-left: 50px;
+}
+#form_with_toggle{
+    margin-left: 50px;
+    display: inline;
+}
+/* IDS PARA A TELA DE REGISTRO */
+#account-box{
+    height: 720px;  
+}
+
+#purple-bg{
+    margin-top: 5px;
+}
+#senha{
+    display: inline; 
+    margin-right: 100px;
+}
+#confirma_senha{
+    display: inline;
+    margin-right: 100px;
+}
+#eye{
+    margin-left: -40px;
+}
+#eye2{
+    margin-left: -140px;
+}
+
