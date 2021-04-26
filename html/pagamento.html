@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Jarvis 4 Geek</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/pagamento.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- INICIO DA HEADER-->
+    <nav class="navbar navbar-default custom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+                <div class="tituloLogo">
+                    <a class="navbar-brand titulo" href="../html/home.html">Jarvis 4 Geek</a>
+                    <img class="imagemLogo" src="../img/logoPag.svg">
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <div class="row">
+                    <ul class="nav navbar-nav">
+                        <li class="formularioHeader">
+                            <form class="navbar-form navbar-left" action="/action_page.php">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="O que procura?" name="search">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">
+                      <img class="botaoPesquisa" src="https://img.icons8.com/nolan/25/search.png" />
+                    </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                    <!--LOGIN E CARRINHO DE COMPRA (LADO DIREITO DA HEADER)-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="login"><a class="iconLogin" href="login.html"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                  class="bi bi-person" viewBox="0 0 16 16">
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                </svg> Minha Conta</a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="imgCart" src="https://img.icons8.com/pastel-glyph/40/ffffff/fast-cart.png" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- FIM LOGIN E CARRINHO DE COMPRA -->
+                <!--COMEÇO DA SEGUNDA LINHA DA HEADER ONDE FICA OS ICONES DE COMPRA-->
+                <div class="row">
+                    <div class="col-lg-1">
+                    </div>
+                    <div class="col-lg-11">
+                        <ul class="nav navbar-nav navbar-form">
+                            <li>
+                                <a href="#" class="icon-show"> Decoração
+                  <img class="iconNav" src="../img/quadro-armacao.svg">
+                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon-show">Canecas
+                  <img class="iconNav" src="../img/caneca-de-cafe.svg">
+                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon-show">Camisetas
+                  <img class="iconNav" src="../img/camisa-preta-de-manga-curta.svg">
+                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon-show">Colecionáveis
+                  <img class="iconNav" src="../img/super-heroi.svg">
+                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon-show">Acessórios
+                  <img class="iconNav" src="../img/fone-de-ouvido-de-computador.svg">
+                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--FIM DOS ICONES DE COMPRA-->
+            </div>
+        </div>
+    </nav>
+    <!-- FIM DA HEADER-->
+
+    <div class="container tituloPag">
+        <h3>Pagamento</h3>
+    </div>
+
+    <!-- INICIO DO STEP -->
+    <div class="row ">
+        <div class="container">
+            <div class="painelStep">
+                <div class=" col-md-6">
+                    <div class="stepwizard">
+                        <div class="stepwizard-row setup-panel">
+                            <div class="stepwizard-step col-xs-3">
+                                <a href="#step-1" type="button" class="btn btn-success btn-circle">1</a>
+                                <p><small>Dados Pessoais</small></p>
+                            </div>
+                            <div class="stepwizard-step col-xs-3">
+                                <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                                <p><small>Endereço</small></p>
+                            </div>
+                            <div class="stepwizard-step col-xs-3">
+                                <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                                <p><small>Pagamento</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form role="form">
+                        <div class="panel panel-primary setup-content" id="step-1">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Identificação</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label class="control-label">Email</label>
+                                    <input maxlength="100" type="email" required="required" class="form-control" placeholder="Acesse com seu email" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Senha</label>
+                                    <input maxlength="100" type="password" required="required" class="form-control" placeholder="Digite sua senha" />
+                                </div>
+                                <div class="botaoRadio">
+                                    <p>Já possui um cadastro:</p>
+                                    <input type="radio" id="sim" name="gender" value="sim">
+                                    <label for="sim">Sim</label>
+                                    <input type="radio" id="nao" name="gender" value="nao">
+                                    <label for="nao">Não, essa é a minha primeira compra</label>
+                                </div>
+                                <button class="btn btn-primary nextBtn pull-right" type="button">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-primary setup-content" id="step-2">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Endereço</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label class="control-label">CEP</label>
+                                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Informe seu CEP" />
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <label class="control-label">Rua</label>
+                                        <input maxlength="300" type="text" required="required" class="form-control" placeholder="Informe seu endereço" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="control-label">Número</label>
+                                        <input maxlength="5" type="text" required="required" class="form-control num" placeholder="Nº" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Complemento</label>
+                                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="edf. apt." />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Bairro</label>
+                                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Informe seu bairro" />
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <label class="control-label">Cidade</label>
+                                        <input maxlength="300" type="text" required="required" class="form-control" placeholder="Informe sua cidade" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="control-label">Estado</label>
+                                        <input maxlength="5" type="text" required="required" class="form-control num" placeholder="Informe seu Estado" />
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary nextBtn pull-right" type="button">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-primary setup-content" id="step-3">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Cartão de crédito</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label class="control-label">Número do cartão de crédito</label>
+                                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Validade</label>
+                                    <input maxlength="200" type="month" required="required" class="form-control" />
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <label class="control-label">Nome do titular do cartão de crédito</label>
+                                        <input maxlength="300" type="text" required="required" class="form-control" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="control-label">Código de Segurança</label>
+                                        <input maxlength="5" type="text" required="required" class="form-control num" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Parcelamento</label>
+                                    <input maxlength="200" type="number" min="1" max="12" required="required" class="form-control" />
+                                </div>
+                                <button class="btn btn-primary botaoConcluir nextBtn pull-right" type="button">Concluir Compra</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class=" col-md-1"></div>
+                <div class="resumoCompra col-md-5">
+                    <h4 class="tituloResumo"> Resumo da compra </h4>
+                    <hr>
+                    <div class="row linhaProd">
+                        <div class="col-md-3 ">
+                            <img class="imagemProduto" src="../img/canecaMarvel-removebg-preview.png">
+                        </div>
+                        <div class="col-md-7 ">
+                            <h4 class="nomeProduto"> Caneca Marvel Porcelana Branca </h4>
+                            <h5 class="precoProduto"> R$ 49,90 </h5>
+                            <h5 class="qtdProduto"> Qtd: 01 </h5>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <hr>
+                    <div class="row text-right">
+                        <h4>Subtotal: R$49,90</h4>
+                    </div>
+                    <div class="row text-right">
+                        <h4>Total: R$49,90</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DO STEP -->
+
+
+    <!-- INICIO DO FOOTER-->
+    <footer class="container-fluid text-center footer">
+        <table class="table borderless">
+            <thead>
+                <tr>
+                    <td scope="col">
+                        <h4>Institucional</h4>
+                    </td>
+                    <td scope="col">
+                        <h4>Dúvidas</h4>
+                    </td>
+                    <td scope="col">
+                        <h4>Fale Conosco</h4>
+                    </td>
+                    <td scope="col">
+                        <h4>Receba Novidades</h4>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a class="footer_options" href="#">
+                            <p>Sobre a empresa</p>
+                        </a>
+                    </td>
+                    <td><a class="footer_options" href="#">Ajuda</a></td>
+                    <td><a class="footer_options" href="#">Atendimento</a></td>
+                    <td>
+                        <p class="footer_options">Assine e receba novidades sempre em primeira mão:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a class="footer_options" href="#">Politica de privacidade</a></td>
+                    <td><a class="footer_options" href="#">Dúvidas</a></td>
+                    <td>
+                        <form class="navbar-form navbar-right" action="/action_page.php">
+                            <div class="input-group email">
+                                <input type="email" class="form-control" placeholder="Digite seu E-mail" name="email">
+                                <div class="input-group-btn email">
+                                    <button class="btn btn-default" type="submit">
+                    Assinar
+                  </button>
+                                </div>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        </th>
+                        <td><a class="footer_options" href="#">Política de troca e garantia</a></td>
+                        <td><a class="footer_options" href="#">Fale Conosco</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        © 2020 Copyright: Jarvis 4 Geek
+    </footer>
+    <!-- FIM DO FOOTER-->
+
+    <!-- SCRIPT BOOTSTRAP-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/pagamento.js"></script>
+    <script src="../js/home.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</body>
+
+</html>
