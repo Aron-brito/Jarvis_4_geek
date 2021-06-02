@@ -44,7 +44,9 @@
         public function remove_produto(){
                 // remove produto no banco
         }
+        public function altera_produto(){
 
+        }
 
          // Gets e sets de todos os atributos
         public function getId()
@@ -52,11 +54,6 @@
                 return $this->id;
         }
 
-        /**
-         * Set the value of id
-         *
-         * @return  self
-         */ 
         public function setId($id)
         {
                 $this->id = $id;
@@ -70,11 +67,6 @@
                 return $this->nome;
         }
 
-        /**
-         * Set the value of nome
-         *
-         * @return  self
-         */ 
         public function setNome($nome)
         {
                 $this->nome = $nome;
@@ -87,11 +79,6 @@
                 return $this->descricao;
         }
 
-        /**
-         * Set the value of descricao
-         *
-         * @return  self
-         */ 
         public function setDescricao($descricao)
         {
                 $this->descricao = $descricao;
@@ -104,11 +91,6 @@
                 return $this->img;
         }
 
-        /**
-         * Set the value of img
-         *
-         * @return  self
-         */ 
         public function setImg($img)
         {
                 $this->img = $img;
@@ -122,11 +104,6 @@
                 return $this->preco;
         }
 
-        /**
-         * Set the value of preco
-         *
-         * @return  self
-         */ 
         public function setPreco($preco)
         {
                 $this->preco = $preco;
@@ -140,11 +117,6 @@
                 return $this->desconto;
         }
 
-        /**
-         * Set the value of desconto
-         *
-         * @return  self
-         */ 
         public function setDesconto($desconto)
         {
                 $this->desconto = $desconto;
@@ -158,11 +130,6 @@
                 return $this->fornecedor;
         }
 
-        /**
-         * Set the value of fornecedor
-         *
-         * @return  self
-         */ 
         public function setFornecedor($fornecedor)
         {
                 $this->fornecedor = $fornecedor;
