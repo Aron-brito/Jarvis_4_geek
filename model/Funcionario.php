@@ -3,10 +3,10 @@ require "Usuario.php";
 
 class Funcionario extends Usuario{
   
-  private funcao;
+  private $funcao;
 
-  public __construct($id, $nome, $cpf, $senha,$email,$funcao){
-    parent:::__construct($id,$nome,$cpf,$senha);
+  public function __construct($id, $nome, $cpf, $senha,$email,$funcao){
+    parent::__construct($id,$nome,$cpf,$senha, $email);
     $this->funcao = $funcao;
   }
 

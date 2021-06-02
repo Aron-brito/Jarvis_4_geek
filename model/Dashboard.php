@@ -1,6 +1,6 @@
 <?php
 
-require "./ContaCliente.php";
+require "./Cliente.php";
 require "./Produto.php";
 require "./Endereco.php";
 require "./Preparacao.php";

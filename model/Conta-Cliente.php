@@ -3,9 +3,10 @@
 require "Cliente.php";
 require "Endereco.php";
 require "Cartao.php";
-require "Pedidos.php"
+require "Pedidos.php";
 
-class Conta-Cliente{
+class ContaCliente
+{
 
   private $cliente;
   private $cartao = array();
@@ -14,25 +15,27 @@ class Conta-Cliente{
   private $gasto_total;
 
 
-  public function __construct($gasto_total,Cliente $cliente){
+  public function __construct($gasto_total, Cliente $cliente)
+  {
     $this->cliente = $cliente;
-
   }
 
-  public function Create_conta(){
+  public function Create_conta()
+  {
     // criação de conta necessita acesso ao banco para realizar !!
   }
-  
-  public Cal_gastos_total(){
-    for($i= 0; $i < count($this->pedidos); $i++){
+
+  public function Cal_gastos_total()
+  {
+    for ($i = 0; $i < count($this->pedidos); $i++) {
       $this->gasto_total += $this->pedidos[$i]->getCarrinho()->getPreco_total();
     }
     return $this->gasto_total;
   }
-  public Historico_pedidos(){
-    for($i= 0; $i < count($this->pedidos); $i++){
-      echo "O pedido {this->pedidos[$i]->id} foi comprado na data {this->pedidos[$i]->getData()}."
+  public function Historico_pedidos()
+  {
+    for ($i = 0; $i < count($this->pedidos); $i++) {
+      echo "O pedido {this->pedidos[$i]->id} foi comprado na data {this->pedidos[$i]->getData()}.";
     }
   }
-
-?>
+}
