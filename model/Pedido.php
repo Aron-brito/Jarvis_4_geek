@@ -36,7 +36,10 @@
         public function fechar_compra(){
             //fechar a compra seria mudar o status do pedido para em preparação?
         }
-
+        public function avaliar_compra($nota){
+             // definir um valor de 1 a 5 para o pedido
+             $this->avaliacao = $nota;   
+        }
         
         public function getData()
         {
@@ -82,6 +85,86 @@
         public function setAvaliacao($avaliacao)
         {
                 $this->avaliacao = $avaliacao;
+
+                return $this;
+        }
+
+        /**
+         * Get the value of cliente
+         */ 
+        public function getCliente()
+        {
+                return $this->cliente;
+        }
+
+        /**
+         * Set the value of cliente
+         *
+         * @return  self
+         */ 
+        public function setCliente($cliente)
+        {
+                $this->cliente = $cliente;
+
+                return $this;
+        }
+
+        /**
+         * Get the value of carrinho
+         */ 
+        public function getCarrinho()
+        {
+                return $this->carrinho;
+        }
+
+        /**
+         * Set the value of carrinho
+         *
+         * @return  self
+         */ 
+        public function setCarrinho($carrinho)
+        {
+                $this->carrinho = $carrinho;
+
+                return $this;
+        }
+
+        /**
+         * Get the value of status
+         */ 
+        public function getStatus()
+        {
+                return $this->status;
+        }
+
+        /**
+         * Set the value of status
+         *
+         * @return  self
+         */ 
+        public function setStatus($status)
+        {
+                $this->status = $status;
+
+                return $this;
+        }
+
+        /**
+         * Get the value of id
+         */ 
+        public function getId()
+        {
+                return $this->id;
+        }
+
+        /**
+         * Set the value of id
+         *
+         * @return  self
+         */ 
+        public function setId($id)
+        {
+                $this->id = $id;
 
                 return $this;
         }
