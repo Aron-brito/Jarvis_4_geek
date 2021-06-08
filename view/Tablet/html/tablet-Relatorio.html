@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Jarvis 4 Geek</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/tablet-Preparacao.css"> -->
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../css/custom.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- INICIO DA HEADER-->
+    <nav class="navbar navbar-default custom">
+        <div class="container-fluid">
+            <div class="container linhaHeader">
+                <div class="col-md-1"></div>
+                <div class="navbar-header col-md-6">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="tituloLogo">
+                        <a class="navbar-brand titulo" href="tablet-Pedidos.html">Jarvis 4 Geek</a>
+                        <a href="tablet-Pedidos.html"><img class="imagemLogo" src="../img/logoPag.svg"></a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-form">
+                        <li>
+                            <a href="tablet-Preparacao.html" class="icon-show"> PREPARAÇÃO</a>
+                        </li>
+                        <li>
+                            <a href="tablet-Embalagem.html" class="icon-show">EMBALAGEM</a>
+                        </li>
+                        <li>
+                            <a href="tablet-Entrega.html" class="icon-show">ENTREGA</a>
+                        </li>
+                        <li>
+                            <a id="botaoGerente" href="tablet-Relatorio.html" class="icon-show">GERENTE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- FIM DA HEADER -->
+
+    <!-- INICIO DOS CARDS -->
+
+    <div class="row top_tiles container">
+        <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="tile-stats">
+                <div class="icon"> <i class="fa fa-clock-o"></i></div>
+                <div class="count">5 min</div>
+                <h3>Setor de Preparação</h3>
+            </div>
+        </div>
+        <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="tile-stats">
+                <div class="icon"><i class="fa fa-clock-o"></i></div>
+                <div class="count">15 min</div>
+                <h3>Setor de Embalagem</h3>
+            </div>
+        </div>
+        <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="tile-stats">
+                <div class="icon"><i class="fa fa-clock-o"></i></div>
+                <div class="count">25 min</div>
+                <h3>Setor de Entrega</h3>
+            </div>
+        </div>
+        <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="tile-stats">
+                <div class="icon"><i class="fa fa-clock-o"></i></div>
+                <div class="count">7 dias</div>
+                <h3>Tempo da Entrega</h3>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DOS CARDS -->
+
+    <!-- PRODUTOS MAIS VENDIDOS-->
+    <div class="row top_tiles container">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Produtos Mais Vendidos</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Settings 1</a>
+                                </li>
+                                <li><a href="#">Settings 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div>
+                    <div class="x_title">
+                        <h2>Top Produtos Mais Vendidos</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Settings 1</a>
+                                    </li>
+                                    <li><a href="#">Settings 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <ul class="list-unstyled top_profiles scroll-view">
+                        <li class="media event">
+                            <a class="pull-left border-aero profile_thumb">
+                                <img class="imagemProduto" src="../img/produtos.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Canecas</h5>
+                                <p><strong>1800 </strong> unidades </p>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-green profile_thumb">
+                                <img class="imagemProduto" src="../img/produtos.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Camisetas</h5>
+                                <p><strong>1400 </strong> unidades </p>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-blue profile_thumb">
+                                <img class="imagemProduto" src="../img/produtos.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Colecionáveis</h5>
+                                <p><strong>1200 </strong> unidades </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-aero profile_thumb">
+                                <img class="imagemProduto" src="../img/produtos.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Decoração</h5>
+                                <p><strong>1000 </strong> unidades </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-green profile_thumb">
+                                <img class="imagemProduto" src="../img/produtos.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Acessórios</h5>
+                                <p><strong>500 </strong> unidades </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- FIM DO GRAFICO DE PIZZA-->
+
+    <!-- BAIRROS MAIS ATENDIDOS-->
+
+    <div class="row top_tiles container">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Bairros Mais Atendidos</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Settings 1</a>
+                                </li>
+                                <li><a href="#">Settings 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <canvas id="mybarChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div>
+                    <div class="x_title">
+                        <h2>Top Bairros Mais Atendidos</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Settings 1</a>
+                                    </li>
+                                    <li><a href="#">Settings 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <ul class="list-unstyled top_profiles scroll-view">
+                        <li class="media event">
+                            <a class="pull-left border-aero profile_thumb">
+                                <img class="imagemProduto" src="../img/endereco-residencial.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Brotas</h5>
+                                <p><strong>91 </strong> atendimentos </p>
+                                <p> <small>Por mês</small>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-green profile_thumb">
+                                <img class="imagemProduto" src="../img/endereco-residencial.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Paripe</h5>
+                                <p><strong>60 </strong> atendimentos </p>
+                                <p> <small>Por mês</small>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-blue profile_thumb">
+                                <img class="imagemProduto" src="../img/endereco-residencial.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Nazaré</h5>
+                                <p><strong>75 </strong> atendimentos </p>
+                                <p> <small>Por mês</small>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-aero profile_thumb">
+                                <img class="imagemProduto" src="../img/endereco-residencial.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Ribeira</h5>
+                                <p><strong>64 </strong> atendimentos </p>
+                                <p> <small>Por mês</small>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-green profile_thumb">
+                                <img class="imagemProduto" src="../img/endereco-residencial.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Rio Vermelho</h5>
+                                <p><strong>72 </strong> atendimentos </p>
+                                <p> <small>Por mês</small>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-green profile_thumb">
+                                <img class="imagemProduto" src="../img/endereco-residencial.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Barra</h5>
+                                <p><strong>80 </strong> atendimentos </p>
+                                <p> <small>Por mês</small>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-green profile_thumb">
+                                <img class="imagemProduto" src="../img/endereco-residencial.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Federação</h5>
+                                <p><strong>65 </strong> atendimentos </p>
+                                <p> <small>Por mês</small>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIM DOS BAIRROS MAIS ATENDIDOS-->
+
+    <!-- CLIENTES QUE MAIS COMPRAM-->
+
+    <div class="row top_tiles container">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Clientes Que Mais Compram</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Settings 1</a>
+                                </li>
+                                <li><a href="#">Settings 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <canvas id="mybarChart2"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div>
+                    <div class="x_title">
+                        <h2>Top Clientes Que Mais Compram (R$/mês)</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Settings 1</a>
+                                    </li>
+                                    <li><a href="#">Settings 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <ul class="list-unstyled top_profiles scroll-view">
+                        <li class="media event">
+                            <a class="pull-left border-aero profile_thumb">
+                                <img class="imagemProduto" src="../img/avaliacao-do-cliente.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#"> Lázaro Silva</h5>
+                                <p><strong>R$370,00 </strong></p>
+                                <p> <small>31 dias</small>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-green profile_thumb">
+                                <img class="imagemProduto" src="../img/avaliacao-do-cliente.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Gabriel Cruz</h5>
+                                <p><strong>R$310,00 </strong> </p>
+                                <p> <small>31 dias</small>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-blue profile_thumb">
+                                <img class="imagemProduto" src="../img/avaliacao-do-cliente.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Vitor Santos</h5>
+                                <p><strong>R$280,00 </strong></p>
+                                <p> <small>31 dias</small>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-aero profile_thumb">
+                                <img class="imagemProduto" src="../img/avaliacao-do-cliente.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Aron Brito</h5>
+                                <p><strong>R$200,00 </strong></p>
+                                <p> <small>31 dias</small>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-green profile_thumb">
+                                <img class="imagemProduto" src="../img/avaliacao-do-cliente.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Jadson Nobre</h5>
+                                <p><strong>R$180,00 </strong></p>
+                                <p> <small>31 dias</small>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-green profile_thumb">
+                                <img class="imagemProduto" src="../img/avaliacao-do-cliente.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Vanessa Martins</h5>
+                                <p><strong>R$175,00 </strong></p>
+                                <p> <small>31 dias</small>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media event">
+                            <a class="pull-left border-green profile_thumb">
+                                <img class="imagemProduto" src="../img/avaliacao-do-cliente.svg">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="title" href="#">Maria Lima</h5>
+                                <p><strong>R$170,00 </strong></p>
+                                <p> <small>31 dias</small>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIM DOS CLIENTES QUE MAIS COMPRAM-->
+
+
+    <!-- INICIO DO FOOTER-->
+    <footer class="container-fluid text-center footer-bottom">
+        © 2020 Copyright: Jarvis 4 Geek
+    </footer>
+    <!-- FIM DO FOOTER-->
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- ECharts -->
+    <script src="../vendors/echarts/dist/echarts.min.js"></script>
+    <script src="../vendors/echarts/map/js/world.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../js/custom.min.js"></script>
+</body>
+
+</html>

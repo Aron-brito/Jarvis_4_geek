@@ -1,0 +1,137 @@
+h3{
+    color: black !important; 
+}
+
+.account-box
+{
+    border: 2px solid rgba(153, 153, 153, 0.75);
+    border-radius: 15px;
+    -moz-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -o-border-radius: 2px;
+    z-index: 3;
+    font-size: 13px !important;
+    font-family: "Helvetica Neue" ,Helvetica,Arial,sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 30px  !important;
+    margin-bottom: 30px !important;
+    height: 550px;
+    box-shadow: 1px 1px 5px #ccc;
+    
+}
+
+.login_title{
+    margin-bottom: 40px;
+}
+.logo
+{
+    width: 10px;
+    text-align: center;
+    margin: 10px 0px 27px 40px;
+    background-position: 0px -4px;
+    position: relative;
+}
+
+input.form-control{
+    width: 300px;
+    margin: auto;    
+}
+
+
+.checkbox{
+    margin-left: 20px;
+    margin-bottom: 20px !important;
+    display: inline-block !important; 
+}
+.forgotLnk
+{
+    margin-top: 10px;
+    display: block;
+}
+
+.purple-bg
+{
+    background-color: #6E329D;
+    color: #fff;
+}
+.or-box
+{
+    position: relative;
+    border-top: 1px solid #dfdfdf;
+    padding-top: 20px;
+    margin-top:20px;
+}
+.or
+{
+    color: #666666;
+    background-color: #ffffff;
+    position: absolute;
+    text-align: center;
+    top: -8px;
+    width: 40px;
+    left: 190px;
+}
+.account-box .btn:hover
+{
+    color: #fff;
+}
+.btn-facebook
+{
+    background-color: #3F639E;
+    color: #fff;
+    font-weight:bold;
+}
+
+.confirm{
+    margin-top: 20px;
+}
+
+.btn-google
+{
+    background-color: #454545;
+    color: #fff;
+    font-weight:bold;
+}
+
+.registro{
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+.pass_with_toggle{
+    margin-bottom: 20px !important;
+}
+
+#togglePassword{
+    margin-left: -140px;
+}
+#email_login{
+    margin-left: 50px;
+}
+#form_with_toggle{
+    margin-left: 50px;
+    display: inline;
+}
+/* IDS PARA A TELA DE REGISTRO */
+#account-box{
+    height: 720px;  
+}
+
+#purple-bg{
+    margin-top: 5px;
+}
+#senha{
+    display: inline; 
+    margin-right: 100px;
+}
+#confirma_senha{
+    display: inline;
+    margin-right: 100px;
+}
+#eye{
+    margin-left: -40px;
+}
+#eye2{
+    margin-left: -140px;
+}
+

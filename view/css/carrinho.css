@@ -1,0 +1,26 @@
+.painel{
+    margin-top: 20px;
+}
+.panel-info>.panel-heading{
+    background-color: white !important;
+    border-color: #33065d !important;
+}
+.btn-success{
+    background-color: #33065d !important; 
+}
+.text-right{
+    font-size: 20px !important;
+}
+
+h3{
+    color: black  !important;
+    margin-bottom: 10px !important;
+}
+body {
+	margin-top: 20px;
+    color: black !important;
+}
+
+/* IDS PRODUTOS */
+
+
