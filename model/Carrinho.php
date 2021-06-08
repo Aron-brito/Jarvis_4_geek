@@ -5,7 +5,7 @@
     class Carrinho{
         private $id;
         private $itens = array();
-        private $preco_total;
+        private $precoTotal;
 
         public function __construct($id)
         {
@@ -13,15 +13,15 @@
         }
 
 
-        public function adiciona_item($obj_item){
-            array_push($this->itens, $obj_item);
+        public function adiciona_item($objItem){
+            array_push($this->itens, $objItem);
         }
 
         public function calcula_total_carrinho(){
             for($i=0; $i < count($this->itens); $i++){
-                $this->preco_total += $this->itens[$i]->getTotal_item();
+                $this->precoTotal += $this->itens[$i]->getTotal_item();
             }
-            return $this->preco_total;
+            return $this->precoTotal;
         }
 
         public function getId()
@@ -38,12 +38,12 @@
 
         public function getPreco_total()
         {
-                return $this->preco_total;
+                return $this->precoTotal;
         }
 
-        public function setPreco_total($preco_total)
+        public function setPreco_total($precoTotal)
         {
-                $this->preco_total = $preco_total;
+                $this->precoTotal = $precoTotal;
 
                 return $this;
         }
