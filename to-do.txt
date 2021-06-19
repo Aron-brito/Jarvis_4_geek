@@ -1,2 +1,2 @@
-- Tela de pagamento
-- Tela de carrinho
+Alterar a tela de pedidos (os botões)
+alterar a tela de perfil do cliente (colocar os campos da senha pra poder alterar), acrescentar a parte de endereço.
