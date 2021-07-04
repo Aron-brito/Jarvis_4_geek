@@ -1,0 +1,65 @@
+.figura-imagem-produto {
+  display: flex;
+  align-items: flex-start;
+}
+
+.figura-imagem-produto picture img {
+  width: 200px;
+  height: 150px;
+}
+
+.figura-imagem-produto figcaption {
+  padding: 0px 12px;
+  color: #fff;
+}
+
+.figura-imagem-produto figcaption h5 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.estrelas input[type="radio"] {
+  display: none;
+}
+.estrelas label i.fa:before {
+  content: "\f005";
+  color: #fc0;
+}
+.estrelas input[type="radio"]:checked ~ label i.fa:before {
+  color: #ccc;
+}
+
+.estrelas label {
+  font-size: 20px;
+}
+
+.avaliar_pedidos_formulario {
+  padding-top: 20px;
+}
+
+.radio-grupo {
+  display: flex;
+}
+
+.radio-grupo label {
+  margin: 0px 5px;
+}
+
+textarea {
+  max-width: 350px;
+}
+
+#avaliar_pedido_bottao {
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #3f51b5;
+  color: #fff;
+  width: 140px;
+  transition: filter 0.2s;
+}
+
+#avaliar_pedido_bottao {
+  filter: brightness(0.85);
+}

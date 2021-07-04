@@ -1,0 +1,123 @@
+body {
+    background-color: rgba(0, 0, 0, 0.6)!important;
+    color: black !important;
+    /* background-image: url(../img/purpleBack.png) !important;  */
+}
+
+
+/* Customização da primeira linha da header */
+
+.navbar.custom {
+    height: 100px;
+    margin: 0 auto;
+    background-image: url(../img/purple.jpg);
+    width: 100%;
+    border: none;
+}
+
+a.navbar-brand {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar.custom>navbar-brand {
+    margin: auto;
+}
+
+ul.nav.navbar-nav.navbar-form {
+    margin-top: 20px !important;
+    margin-left: -210px !important;
+}
+
+.titulo {
+    color: #f0f0f0 !important;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.imagemLogo {
+    width: 50px;
+    margin-top: 20px;
+}
+
+.tituloLogo {
+    display: block;
+    position: relative;
+    margin-right: 25px;
+}
+
+.linhaHeader {
+    margin-left: -20px !important;
+    margin-top: 15px !important;
+}
+
+.nomefuncionario{
+    font-size: 15px;
+    margin-top: 15px;
+    color: white;
+}
+/* Segunda linha da header (dos icones) */
+
+a.icon-show {
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 1px 1px 5px #ccc;
+    border-radius: 20px;
+    color: #f0f0f0 !important;
+}
+
+.iconNav {
+    width: 25px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+#botaoGerente {
+    background-color: #f0f0f0 !important;
+    color: #1c1722 !important;
+}
+
+#botaoSair {
+    background-color: red !important;
+    color: #1c1722 !important;
+}
+
+
+/* Customização Tabela */
+
+.tituloTabela {
+    font-size: 20px;
+}
+
+.customTabela {
+    border: 1px solid black !important;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+td {
+    font-size: 17px;
+}
+
+a.btn {
+    font-size: 16px;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: black !important;
+    font-size: 16px;
+}
+
+
+/* Customização do Footer */
+
+footer {
+    background-image: url(../img/purple.jpg) !important;
+    font-weight: bold;
+    color: #f0f0f0;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
