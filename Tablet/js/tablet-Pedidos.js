@@ -1,18 +1,14 @@
 
-function iniciaModal(modalID){
-    const modal = document.getElementById(modalID);
-    if(modal){
-        modal.classList.add('mostrar');
-        modal.addEventListener('click', function(e){
-            if(e.target.id == modalID || e.target.className == 'fechar'){
-                modal.classList.remove('mostrar');
-            }           
-        })
-    }
+function acao(){
+
+    let modal = document.querySelector('.modal-container')
+
+    modal.style.display = 'flex';
 }
 
-const botaoVisualizar = document.querySelector('.botaoVisualizar');
-botaoVisualizar.addEventListener('click', function(){
-    iniciaModal('modal-visualizar');
-});
+function fechar (){
 
+    let modal = document.querySelector('.modal-container')
+
+    modal.style.display = 'none';
+}
